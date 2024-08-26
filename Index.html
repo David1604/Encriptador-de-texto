@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptadodetexto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Simbolos/Logo.png" alt="Imagen de Logo">
+    </header>
+    <main class="presentacion">     
+        <section class="presentacion__tarea">
+            <textarea class="texto__tarea" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h1 class="informacion"><img class="imagen__signo" src="./Simbolos/Group.png" alt="Imagen signo"> Solo letras minúsculas y sin acentos</h1>
+            </div>
+            <div class="botones">
+                <button class="btn_encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn_desencriptar" onclick="btnDesencriptar ()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="presentacion__mensaje">
+            <textarea class="mensaje" id="" cols="20" rows="10"></textarea>
+            <div class="contenedor__parrafos">
+                <h2 class="parrafo_mensaje1">Ningún mensaje fue encontrado</h2>
+                <p class="parrafo_mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <button class="copiar" id="btncopiar" onclick="copiarmensaje()">Copiar</button>
+                <button class="limpiar" id="btnlimpiar" onclick="limpiarMensaje()">Limpiar</button>
+            </div>
+        </section>
+        
+    </main>
+    <script src="/criptar.js"></script>
+    <footer>
+        <div class="famer">
+            <h3 class="pie_pagina">Desarrollado por © David1604 - 2024</h3>
+            <a class="enlace__github" href="https://github.com/David1604">GitHub <img class="imagengitgub" src="./Simbolos/github.png"></a>
+        </div>
+    </footer>
+</body>
+</html>
